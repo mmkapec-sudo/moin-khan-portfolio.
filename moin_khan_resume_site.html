@@ -1,69 +1,76 @@
 
+html_code = """
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Mohammad Moin Khan — Techie Resume</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap' rel='stylesheet'>
+  <link href='https://unpkg.com/aos@2.3.4/dist/aos.css' rel='stylesheet'>
   <style>
-    :root {--primary:#00b7ff;--bg1:#0f2027;--bg2:#203a43;--bg3:#2c5364;--text:#fafafa;}
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;color:var(--text);scroll-behavior:smooth;}
+    :root {
+      --primary: #00b7ff;
+      --bg1: #0f2027;
+      --bg2: #203a43;
+      --bg3: #2c5364;
+      --text: #fafafa;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;scroll-behavior:smooth;color:var(--text);}  
     body{background:linear-gradient(-45deg,var(--bg1),var(--bg2),var(--bg3));background-size:400% 400%;animation:gradient 15s ease infinite;}
-    @keyframes gradient{0%{background-position:0 50%;}50%{background-position:100% 50%;}100%{background-position:0 50%;}}
+    @keyframes gradient{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
     header{position:fixed;top:0;left:0;width:100%;padding:15px 10%;display:flex;justify-content:space-between;align-items:center;background:rgba(15,32,39,.8);backdrop-filter:blur(5px);z-index:999;}
     header h1{font-size:1.5rem;font-weight:700;}
-    nav a{margin-left:30px;text-decoration:none;transition:.3s;}
-    nav a:hover{color:var(--primary);}
+    nav a{margin-left:30px;text-decoration:none;font-weight:400;transition:.3s;}
+    nav a:hover{color:var(--primary);}  
     section{padding:110px 10% 70px;min-height:100vh;}
     .hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
     .hero h2{font-size:3rem;font-weight:700;letter-spacing:-1px;white-space:nowrap;overflow:hidden;border-right:.15em solid var(--primary);max-width:0;animation:typing 3s steps(30,end) forwards,blink .8s step-end infinite;}
-    @keyframes typing{to{max-width:100%;}}
-    @keyframes blink{50%{border-color:transparent;}}
+    @keyframes typing{to{max-width:100%}}
+    @keyframes blink{50%{border-color:transparent}}
     .hero p{margin-top:20px;font-size:1.1rem;max-width:600px;line-height:1.6;}
     .container{max-width:900px;margin:0 auto;}
-    .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:25px;margin-bottom:25px;backdrop-filter:blur(6px);}
-    .card h3{margin-bottom:12px;color:var(--primary);}
-    ul{padding-left:18px;} li{margin-bottom:6px;line-height:1.5;}
+    .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:25px;margin-bottom:25px;backdrop-filter:blur(6px);}  
+    .card h3{margin-bottom:12px;color:var(--primary);}  
+    ul{padding-left:18px;}li{margin-bottom:6px;line-height:1.5;}
     .two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
     footer{background:rgba(0,0,0,.35);padding:40px 10%;text-align:center;}
-    footer a{text-decoration:none;color:var(--primary);}
+    footer a{text-decoration:none;color:var(--primary);}  
   </style>
 </head>
 <body>
   <header>
     <h1>Moin Khan</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
+      <a href='#about'>About</a>
+      <a href='#experience'>Experience</a>
+      <a href='#education'>Education</a>
+      <a href='#certifications'>Certifications</a>
+      <a href='#contact'>Contact</a>
     </nav>
   </header>
 
-  <section class="hero" id="home">
+  <section class='hero' id='home'>
     <h2>Hello, I'm Mohammad Moin Khan</h2>
-    <p data-aos="fade-up" data-aos-delay="300">Data-driven CRM Analyst with 2+ years of experience in analytics, process improvement and stakeholder management. Skilled in Salesforce, Zoho, Power BI & Advanced Excel.</p>
+    <p data-aos='fade-up' data-aos-delay='300'>Data-driven CRM Analyst with 2+ years of experience in analytics, process improvement and stakeholder management. Skilled in Salesforce, Zoho, Power BI & Advanced Excel.</p>
   </section>
 
-  <section id="about">
-    <div class="container">
-      <div class="card" data-aos="fade-right">
+  <section id='about'>
+    <div class='container'>
+      <div class='card' data-aos='fade-right'>
         <h3>Professional Summary</h3>
         <p>Data-driven CRM Analyst with 2+ years’ experience in analytics, process improvement, and stakeholder management in dynamic corporate environments. Skilled in Salesforce, Zoho, Power BI, Advanced Excel, and data visualization.</p>
       </div>
     </div>
   </section>
 
-  <section id="experience">
-    <div class="container">
-      <h2 data-aos="zoom-in">Experience</h2>
-      <div class="card" data-aos="fade-up">
-        <h3>CRM Analyst – Corporate & New initiatives · MedGenome Labs <span style="float:right;">Jul 2024 – Present</span></h3>
+  <section id='experience'>
+    <div class='container'>
+      <h2 data-aos='zoom-in'>Experience</h2>
+      <div class='card' data-aos='fade-up'>
+        <h3>CRM Analyst – Corporate & New initiatives · MedGenome Labs <span style='float:right;'>Jul 2024 – Present</span></h3>
         <ul>
           <li>Identified and filled data gaps in CRM, improving accuracy of doctor and deal records.</li>
           <li>Monitored and analysed KPIs for deals, franchises, and B2B partnerships.</li>
@@ -72,15 +79,15 @@
           <li>Collaborated with Sales Heads to refine deal probability data.</li>
         </ul>
       </div>
-      <div class="card" data-aos="fade-up">
-        <h3>Compliance Analyst (Contract) · Prime Focus Technologies <span style="float:right;">Aug 2023 – Feb 2024</span></h3>
+      <div class='card' data-aos='fade-up'>
+        <h3>Compliance Analyst (Contract) · Prime Focus Technologies <span style='float:right;'>Aug 2023 – Feb 2024</span></h3>
         <ul>
           <li>Led Amazon Prime Video’s anti-smoking compliance project, boosting brand reputation.</li>
           <li>Managed project dashboards & generated vendor performance reports.</li>
         </ul>
       </div>
-      <div class="card" data-aos="fade-up">
-        <h3>Management Trainee · Signify Innovations <span style="float:right;">Aug 2022 – Aug 2023</span></h3>
+      <div class='card' data-aos='fade-up'>
+        <h3>Management Trainee · Signify Innovations <span style='float:right;'>Aug 2022 – Aug 2023</span></h3>
         <ul>
           <li>Streamlined warranty claim process, improving TAT by 30%.</li>
           <li>Built and maintained dashboards and reports to monitor KPIs.</li>
@@ -89,47 +96,7 @@
     </div>
   </section>
 
-  <section id="education">
-    <div class="container two-col">
-      <div class="card" data-aos="flip-left">
-        <h3>B.E. Electronics &
-Electronics & Communication Engineering</h3>
-        <p>Visvesvaraya Technological University, Belagavi · 2018 – 2022</p>
-      </div>
-      <div class="card" data-aos="flip-left">
-        <h3>12th CBSE</h3>
-        <p>St Joseph's PU College, Bengaluru · 2016 – 2018</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="certifications">
-    <div class="container">
-      <h2 data-aos="zoom-in">Certifications</h2>
-      <div class="card" data-aos="fade-up">
-        <ul>
-          <li>Tableau 2023 A-Z: Hands-On Tableau Training for Data Science (Udemy)</li>
-          <li>Microsoft Power BI A-Z: Hands-On Power BI Training For Data Science (Udemy)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2 data-aos="zoom-in">Contact</h2>
-      <div class="card" data-aos="fade-up">
-        <p>Email: <a href="mailto:moinkhan3234@gmail.com">moinkhan3234@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/moin-khan-79b750220/" target="_blank">linkedin.com/in/moin-khan-79b750220</a></p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Mohammad Moin Khan. Built with ❤️ and AOS animations.</p>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init({duration:800,once:true});</script>
-</body>
-</html>
+  <section id='education'>
+    <div class='container two-col'>
+      <div class='card' data-aos='flip-left'>
+        <h3>B.E. Electronics & Communication Engineering</
